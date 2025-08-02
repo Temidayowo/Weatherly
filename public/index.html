@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weatherly</title>
+        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="./output.css" />
+        <script
+            src="https://kit.fontawesome.com/d5c2afb46b.js"
+            crossorigin="anonymous"
+        ></script> 
+    </head>
+    <body class="bg-slate-200 flex justify-center items-center h-screen">
+        <div class="w-90 p-6 bg-[#F4F6F8] rounded-xl shadow-xl shadow-blue-100">
+            <div class="flex justify-between items-center">
+                <h2 class="font-semibold text-xl text-slate-800">
+                    <i class="fa-solid fa-cloud"></i>Weatherly
+                </h2>
+                <i class="fa-solid fa-gear text-slate-800"></i>
+            </div>
+            <div class="my-7">
+                <input
+                    type="text"
+                    placeholder="Search City"
+                    class="w-full rounded px-3 py-1.5 bg-slate-200 shadow-md shadow-slate-300 outline-none font-semibold text-slate-700"
+                />
+            </div>
+            <div
+                class="flex justify-between items-center shadow-md shadow-slate-300 bg-slate-200 p-6 rounded-md"
+            >
+                <div>
+                    <h3 class="font-semibold text-md text-slate-500">
+                        Current Location: Lagos, NG
+                    </h3>
+                    <h1 class="font-semibold text-5xl pt-0.5 text-slate-800">
+                        29&#xB0;C
+                    </h1>
+                    <p class="text-slate-500 text-sm font-semibold">
+                        Feels Like: 31&#xB0;C
+                    </p>
+                    <p class="text-slate-500 text-sm font-semibold">
+                        Humidity: 78%
+                    </p>
+                </div>
+                <div>
+                    <img
+                        class="w-20.5"
+                        src="./images/sun.png"
+                        alt=""
+                        srcset=""
+                    />
+                </div>
+            </div>
+            <div
+                class="my-7 grid grid-cols-2 gap-1 justify-items-center rounded-md"
+            >
+                <div
+                    class="flex flex-col items-center justify-center gap-1.5 w-28 h-28 bg-slate-200 shadow-md shadow-slate-300 rounded-md"
+                >
+                    <i class="fa-solid fa-wind text-2xl text-slate-600"></i>
+                    <p class="text-xs text-slate-600">Wind Speed:</p>
+                    <p class="text-sm font-semibold text-slate-700">10km/h</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center gap-1.5 w-28 h-28 bg-slate-200 shadow-md shadow-slate-300 rounded-md"
+                >
+                    <i class="fa-solid fa-droplet text-2xl text-slate-600"></i>
+                    <p class="inline-block text-xs text-slate-600">Pressure:</p>
+                    <p
+                        class="inline-block text-sm font-semibold text-slate-700"
+                    >
+                        10km/h
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2.5 content-stretch -mt-1.5">
+                <div
+                    class="bg-slate-200 p-2.5 rounded-md flex gap-2.5 items-center justify-center"
+                >
+                    <span
+                        class="bg-slate-900 h-8 w-8 flex items-center justify-center rounded-full"
+                    >
+                        <i class="fa-solid fa-moon text-slate-200 text-xl"></i>
+                    </span>
+                    <p class="text-[0.9rem] font-semibold">Dark Mode</p>
+                </div>
+                <div
+                    class="bg-slate-200 p-2.5 rounded-md flex gap-2.5 items-center justify-center"
+                >
+                    <i class="fa-solid fa-location-dot text-xl"></i>
+                    <p class="text-[0.9rem] font-semibold">Use Location</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wind Speed
+        <i class="fa-solid fa-wind"></i>
+
+        Pressure Icon
+        <i class="fa-solid fa-droplet"></i> -->
+
+        <script src="./app.js"></script>
+    </body>
+</html>
