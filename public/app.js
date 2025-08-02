@@ -1,32 +1,3 @@
-let input = document.querySelector('input')
-
-input.addEventListener('input', () => {
-    console.log('hello');
-    console.log(input.value);
-
-    getData()
-    
-    
-})
-
-console.log(input.classList);
-
-
-fetch(
-    "https://api.openweathermap.org/data/2.5/weather?lat=6.4474&lon=3.3903&appid=fd95d8aa0480e31225fd987e45029e76"
-)
-    .then((x) => {
-        return x.json();
-    })
-    .then((y) => console.log(y));
-
-
-
-
-
-
-
-
 
 
 
